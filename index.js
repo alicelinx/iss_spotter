@@ -39,13 +39,13 @@ const printPassTimes = (passTimes) => {
 };
 
 
-nextISSTimesForMyLocation((error, passTimes) => {
-  if (error) {
-    return console.log("It didn't work!", error);
-  }
-  // success, print out the deets!
-  printPassTimes(passTimes);
-});
+// nextISSTimesForMyLocation((error, passTimes) => {
+//   if (error) {
+//     return console.log("It didn't work!", error);
+//   }
+//   // success, print out the deets!
+//   printPassTimes(passTimes);
+// });
 
 // printPassTimes([
 //   { risetime: 1686396694, duration: 503 },
@@ -54,3 +54,5 @@ nextISSTimesForMyLocation((error, passTimes) => {
 //   { risetime: 1686505894, duration: 650 },
 //   { risetime: 1686542294, duration: 182 }
 // ]);
+
+module.exports = { printPassTimes };
